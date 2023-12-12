@@ -1,0 +1,41 @@
+:root {
+  --side: 350px;
+}
+
+body,
+body * {
+  margin: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+div {
+  font-size: 32px;
+  width: var(--side);
+  height: var(--side);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div:nth-child(1) {
+  background-color: green;
+  left: calc(50vw - var(--side));
+  top: calc(50vh - var(--side));
+}
+div:nth-child(2) {
+  background-color: yellow;
+  left: calc(50vw - var(--side));
+  top: 50vh;
+}
+div:nth-child(3) {
+  background-color: red;
+  left: 50vw;
+  top: calc(50vh - var(--side));
+}
+div:nth-child(4) {
+  background-color: blue;
+  left: 50vw;
+  top: 50vh;
+}

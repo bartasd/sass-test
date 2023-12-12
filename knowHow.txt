@@ -1,0 +1,6 @@
+// installing sass
+npm install -g sass
+
+// compile the code - watches the sass file as it change
+// and compiles immediate
+sass --watch ./css/style.sass ./css/output.css
